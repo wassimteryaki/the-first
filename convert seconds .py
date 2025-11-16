@@ -1,5 +1,5 @@
 time= int(input("enter your time by second:\n"))
-#convert all by minut 
+#convert all by minute 
 m=time//60
 #from minute to:
 second=(time%60)
