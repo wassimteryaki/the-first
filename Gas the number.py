@@ -1,7 +1,7 @@
 
 import random 
 s= input("enter the way that you want to play:\n1_randint\n2_random\n")
-if (s=="1"or"2"):
+if s=="1" or s=="2":
     p=int(input ("enter your gass by four number:\n"))
     if p>9999 or p<1000:
         print ("eror")
