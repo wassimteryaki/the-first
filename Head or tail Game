@@ -1,0 +1,28 @@
+import random
+print ("welcom to my Game \nwhich way you want to play with\n")
+s= int (input("1_randint\n2_random"))
+if s==1:
+    f=int (input("have a chois:\n1_head\n2_tail\n"))
+    if f==random.randint(1,2):
+        print ("you win")
+    elif f>2:
+        print("you shold chois one or tow ")
+    else:
+        print ("you Lose")
+
+elif s==2:
+        f=int (input("have a chois:\n1_head\n2_tail\n"))
+        c=random.random()
+        if c>0.5:
+            c=1
+        elif c<=0.5:
+            c=2
+        if f==c:
+            print ("you win")
+        elif f>2:
+            print("you shold chois one or tow ")
+        else:
+            print ("you Lose")    
+else:
+    print("chois a trouth way")
+        
