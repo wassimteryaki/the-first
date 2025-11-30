@@ -6,8 +6,10 @@ if real_book1 :
     real_book2=input("and what\n")
     if real_book2:
         labrary.append(real_book2)
-    
-print (f"you just have{labrary}")
+        
+if labrary:
+    print (f"you just have{labrary}")
+
 imaging_book1=input("do you want to bay some in the fuotar\n").lower()
 if imaging_book1=="yes":
     imaging_book1=input("what its\n")
@@ -18,7 +20,7 @@ if imaging_book1=="yes":
     imaging_book2=input("and what?\n")
     if imaging_book2:
         wish_book.append(imaging_book2)
-    print(wish_book)    
+    print(f"you should by{wish_book}")    
 questione=input("what about now \ndid you by any book from the book that you hobe to have") 
 if questione=="yes" or questione=="of cours":
     real_book3=input("what its\n")
@@ -32,9 +34,18 @@ if questione=="yes" or questione=="of cours":
 questione=input("did you seal some ?\n") 
 if questione=="yes":
     deleted_book=input("really!!! what its\n")
-    labrary.remove(deleted_book)
-    print(f"naw you just have {labrary}")
-print(f"dont forget to bay{wish_book}")    
+    if deleted_book in labrary:
+        labrary.remove(deleted_book)
+        print(f"naw you just have {labrary}")
+if wish_book:        
+    print(f"dont forget to bay{wish_book}")
+else:
+    print("you have no book you should by")
+if labrary:
+    print("you have {labrary}")
+else:
+    print("you are poor\nyou dont have any book")
+input("if you want to end the program clice Enter")   
     
     
 
