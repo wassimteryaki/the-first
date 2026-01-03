@@ -1,7 +1,6 @@
 import random
 computerList=["paper","scissor","rocke"]
 Computer=random.choice(computerList)
-print(Computer)
 thehelp=input("welcometo my app\nclice enter to strt game ro write Help to have the roal\n").capitalize()
 if thehelp=="Help":
     print("""           the roals:
