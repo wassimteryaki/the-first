@@ -8,23 +8,28 @@ if thehelp=="Help":
                 2-the scissor eat the paper
                 3-the pepar eat the rocke
                 """)
-else:
+while True:
     user=input("""  have a choice:
-                1-paper
-                2-rocke
-                3-scissor
-                """).lower()
+            1-paper
+            2-rocke
+            3-scissor
+            """).lower()
     if user in computerList:            
         if user==Computer:
             print("you wine")
-            print(f"the Computer choice is {Computer}")
-            print(f"you choice is {user}")
+    
         else:
             print("you lose")
-            print(f"the Computer choice is {Computer}")
-            print(f"you choice is {user}")
-
-            
+        print(f"the Computer choice is {Computer}")
+        print(f"you choice is {user}")
+    
+                
     else:
         print ("Eror choice one of the list")
-input("clice enter to Exit the app")    
+    repit= input("do you want to repit?\nyes or no?").lower() 
+    if repit=="no":
+        
+        input("clice enter to Exit the app")        
+        break
+    
+
